@@ -10,6 +10,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -23,6 +24,14 @@
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
+=======
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+>>>>>>> 16ed25e659ef99f5186c021841ec3aae1d064b7c
   <component name="ProjectId" id="2o82vwCbcNpAHpjeIhgK3S4TAkT" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -31,6 +40,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+<<<<<<< HEAD
     "Application.BookServiceApplication.executor": "Run",
     "Application.BorrowingServiceApplication.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -41,6 +51,13 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+=======
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/pekic/Desktop/Library-Management-Project",
+    "onboarding.tips.debug.path": "C:/Users/pekic/Desktop/Library-Management-Project/src/main/java/com/library-management-project/Main.java"
+>>>>>>> 16ed25e659ef99f5186c021841ec3aae1d064b7c
   }
 }]]></component>
   <component name="RecentsManager">
