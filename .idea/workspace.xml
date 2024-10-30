@@ -4,13 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf0fa3e0-3186-4976-b3b6-46d6ef3d1452" name="Changes" comment="Spring initial" />
+    <list default="true" id="4a9f3efd-4a25-4de1-8695-45a32b9c4bfd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bookservice/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookservice/src/main/java/application/BookServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookservice/src/main/java/bookservice/BookServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookservice/src/main/java/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookservice/src/main/java/bookservice/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookservice/src/main/java/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookservice/src/main/java/bookservice/model/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookservice/src/main/java/repository/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookservice/src/main/java/bookservice/repository/BookRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookservice/src/main/java/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookservice/src/main/java/bookservice/service/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bookservice/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookservice/src/test/java/com/library_management_project/bookservice/BookserviceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/borrowingservice/src/main/java/application/BorrowingServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/borrowingservice/src/main/java/borrowingservice/BorrowingServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/borrowingservice/src/main/java/controller/BorrowingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/borrowingservice/src/main/java/borrowingservice/controller/BorrowingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/borrowingservice/src/main/java/model/BookSummary.java" beforeDir="false" afterPath="$PROJECT_DIR$/borrowingservice/src/main/java/borrowingservice/model/BookSummary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/borrowingservice/src/main/java/service/BorrowingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/borrowingservice/src/main/java/borrowingservice/service/BorrowingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/borrowingservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/borrowingservice/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/borrowingservice/src/test/java/com/library_management_project/borrowingservice/BorrowingserviceApplicationTests.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-<<<<<<< HEAD
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -24,14 +40,6 @@
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
-=======
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
->>>>>>> 16ed25e659ef99f5186c021841ec3aae1d064b7c
   <component name="ProjectId" id="2o82vwCbcNpAHpjeIhgK3S4TAkT" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -40,24 +48,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-<<<<<<< HEAD
     "Application.BookServiceApplication.executor": "Run",
     "Application.BorrowingServiceApplication.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/pekic/Desktop/Library-Management-Project-main",
-    "onboarding.tips.debug.path": "C:/Users/pekic/Desktop/Library-Management-Project/src/main/java/com/library-management-project/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
-=======
-    "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/pekic/Desktop/Library-Management-Project",
-    "onboarding.tips.debug.path": "C:/Users/pekic/Desktop/Library-Management-Project/src/main/java/com/library-management-project/Main.java"
->>>>>>> 16ed25e659ef99f5186c021841ec3aae1d064b7c
+    "last_opened_file_path": "C:/Users/pekic/Desktop/Library-Management-Project-main"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -66,6 +62,9 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\pekic\Desktop\Library-Management-Project" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

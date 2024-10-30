@@ -1,7 +1,7 @@
-package controller;
+package bookservice.controller;
 
-import model.Book;
-import service.BookService;
+import bookservice.model.Book;
+import bookservice.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -22,28 +22,16 @@ public class BookController {
         this.bookService = bookService;
     }
 
-    // handling POST requests so that new books can be added
-    @PostMapping
-    public Book addBook(@RequestBody Book book) {
-        return bookService.addingBook(book);
-    }
-
-    /* Handling POST requests so that the book is set to be borrowed
-       when the user chooses its id
-      -> if the wrong book-id is given, 404 error is shown
-    */
-    @PostMapping("/{id}")
-    public ResponseEntity<Book> markAsBorrowed(@PathVariable Long id) {
-        Optional<Book> bookBorrowed = bookService.markAsBorrowed(id);
-        return bookBorrowed
-                .map(ResponseEntity::ok)
-                .orElseGet(() -> ResponseEntity.notFound().build());
-    }
-
     // handling GET requests so that all books are shown
     @GetMapping
     public List<Book> getAllBooks() {
         return bookService.getAllBooks();
+    }
+
+    // handling POST requests so that new books can be added
+    @PostMapping
+    public Book addBook(@RequestBody Book book) {
+        return bookService.addingBook(book);
     }
 
     /* handling GET requests so that a specific books is shown based
@@ -56,6 +44,17 @@ public class BookController {
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
     }
+
+    /* using PUT requests to make sure the information about thr borrowed book
+         "borrowed" status gets updated
+     */
+    @PutMapping("/borrow/{id}")
+    public ResponseEntity<Book> markAsBorrowed(@PathVariable Long id) {
+        Optional<Book> book = bookService.markAsBorrowed(id);
+        return book.map(ResponseEntity::ok)
+                   .orElseGet(() -> ResponseEntity.notFound().build());
+    }
+
 
     /* handling GET requests so that a specific book is shown based
         on the title of the book

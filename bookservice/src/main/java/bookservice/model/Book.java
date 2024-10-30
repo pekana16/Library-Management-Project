@@ -1,4 +1,4 @@
-package model;
+package bookservice.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -9,8 +9,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-
-public class BookSummary {
+public class Book {
 
     @Id
     @GeneratedValue
@@ -26,4 +25,5 @@ public class BookSummary {
     public void setBorrowed(boolean borrowed) {
         isBorrowed = borrowed;
     }
+
 }
