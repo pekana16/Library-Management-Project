@@ -4,23 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a9f3efd-4a25-4de1-8695-45a32b9c4bfd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="4a9f3efd-4a25-4de1-8695-45a32b9c4bfd" name="Changes" comment="RabbitMQ and Docker working">
+      <change beforePath="$PROJECT_DIR$/.idea/Library-Management-Project-main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/bookservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bookservice/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookservice/src/main/java/application/BookServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookservice/src/main/java/bookservice/BookServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookservice/src/main/java/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookservice/src/main/java/bookservice/controller/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookservice/src/main/java/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookservice/src/main/java/bookservice/model/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookservice/src/main/java/repository/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookservice/src/main/java/bookservice/repository/BookRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookservice/src/main/java/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookservice/src/main/java/bookservice/service/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookservice/src/main/java/bookservice/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookservice/src/main/java/bookservice/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookservice/src/main/java/bookservice/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookservice/src/main/java/bookservice/model/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bookservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bookservice/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookservice/src/test/java/com/library_management_project/bookservice/BookserviceApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/borrowingservice/src/main/java/application/BorrowingServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/borrowingservice/src/main/java/borrowingservice/BorrowingServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/borrowingservice/src/main/java/controller/BorrowingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/borrowingservice/src/main/java/borrowingservice/controller/BorrowingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/borrowingservice/src/main/java/model/BookSummary.java" beforeDir="false" afterPath="$PROJECT_DIR$/borrowingservice/src/main/java/borrowingservice/model/BookSummary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/borrowingservice/src/main/java/service/BorrowingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/borrowingservice/src/main/java/borrowingservice/service/BorrowingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/borrowingservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/borrowingservice/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/borrowingservice/src/main/java/borrowingservice/controller/BorrowingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/borrowingservice/src/main/java/borrowingservice/controller/BorrowingController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/borrowingservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/borrowingservice/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/borrowingservice/src/test/java/com/library_management_project/borrowingservice/BorrowingserviceApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,13 +35,9 @@
       </list>
     </option>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 1
-}</component>
-  <component name="ProjectId" id="2o82vwCbcNpAHpjeIhgK3S4TAkT" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -50,27 +47,17 @@
   "keyToString": {
     "Application.BookServiceApplication.executor": "Run",
     "Application.BorrowingServiceApplication.executor": "Run",
+    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/pekic/Desktop/Library-Management-Project-main"
+    "last_opened_file_path": "C:/Users/pekic/Desktop/demo1"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\pekic\Desktop\Library-Management-Project\borrowingservice\src\main" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\pekic\Desktop\Library-Management-Project" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="cf0fa3e0-3186-4976-b3b6-46d6ef3d1452" name="Changes" comment="" />
+      <changelist id="4a9f3efd-4a25-4de1-8695-45a32b9c4bfd" name="Changes" comment="" />
       <created>1730237117376</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -83,7 +70,14 @@
       <option name="presentableId" value="LOCAL−00001" />
       <updated>1730237911088</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL−00002" summary="RabbitMQ and Docker working">
+      <option name="closed" value="true" />
+      <created>1730347676115</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1730347676115</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -99,7 +93,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Spring initial" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring initial" />
+    <MESSAGE value="RabbitMQ and Docker working" />
+    <option name="LAST_COMMIT_MESSAGE" value="RabbitMQ and Docker working" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
