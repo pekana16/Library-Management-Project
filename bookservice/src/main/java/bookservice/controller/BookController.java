@@ -31,6 +31,8 @@ public class BookController {
     // handling POST requests so that new books can be added
     @PostMapping
     public Book addBook(@RequestBody Book book) {
+        // test for postman
+        System.out.println("Received book for adding: " + book);
         return bookService.addingBook(book);
     }
 
@@ -46,7 +48,7 @@ public class BookController {
     }
 
     /* using PUT requests to make sure the information about thr borrowed book
-         "borrowed" status gets updated
+       gets updated
      */
     @PutMapping("/borrow/{id}")
     public ResponseEntity<Book> markAsBorrowed(@PathVariable Long id) {
@@ -59,16 +61,16 @@ public class BookController {
     /* handling GET requests so that a specific book is shown based
         on the title of the book
     */
-    @GetMapping("/search/title")
-    public List<Book> findByTitle(@RequestParam String title) {
+    @GetMapping("/search/title/{title}")
+    public List<Book> findByTitle(@PathVariable String title) {
         return bookService.findingBookByTitle(title);
     }
 
     /* handling GET requests so that a specific book is shown based
         on the book's author
     */
-    @GetMapping("/search/author")
-    public List<Book> findByAuthor(@RequestParam String author) {
+    @GetMapping("/search/author/{author}")
+    public List<Book> findByAuthor(@PathVariable String author) {
         return bookService.findingBookByAuthor(author);
     }
 
