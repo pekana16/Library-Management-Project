@@ -1,6 +1,8 @@
 package bookservice.service;
 
 import bookservice.model.Book;
+import bookservice.producer.MessageProducer;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import bookservice.repository.BookRepository;
 import org.springframework.stereotype.Service;
@@ -15,14 +17,13 @@ public class BookService {
        final -> bookRepository is FINAL - no changes will be done
      */
     private final BookRepository bookRepository;
+    private final MessageProducer messageProducer;
 
 
-    /* creating a constructor and injecting the BookRepository
-       interface so that we can use it to preform database operations
-     */
     @Autowired
-    public BookService(BookRepository bookRepository) {
+    public BookService(BookRepository bookRepository, MessageProducer messageProducer) {
         this.bookRepository = bookRepository;
+        this.messageProducer = messageProducer;
     }
 
 
@@ -71,6 +72,8 @@ public class BookService {
             if (!book.isBorrowed()) {
                 book.setBorrowed(true);
                 bookRepository.save(book);
+
+                messageProducer.sendBookIsBorrowedMessage("Book with ID-number " + id + " has just now been borrowed.");
             }
             // saving the newly updated book inside the database
             return Optional.of(book);
