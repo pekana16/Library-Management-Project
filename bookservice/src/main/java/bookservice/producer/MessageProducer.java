@@ -21,7 +21,7 @@ public class MessageProducer {
        when the user has borrowed a book
      */
     public void sendBookIsBorrowedMessage(String message) {
-        rabbitTemplate.convertAndSend(topicExchange.getName(), "library.book-service.borrowed", message);
+        rabbitTemplate.convertAndSend(topicExchange.getName(), "library.borrowing-service", message);
         System.out.println("Message sent: " + message);
     }
 }
