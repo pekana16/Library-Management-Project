@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Library Management UI</title>
+</head>
+<body>
+<h1>Library Management</h1>
+
+<h2>Add a New Book</h2>
+<form id="addBookForm">
+    <label>Title: <input type="text" id="bookTitle" /></label>
+    <label>Author: <input type="text" id="bookAuthor" /></label>
+    <button type="submit">Add Book</button>
+</form>
+
+<h2>All Books</h2>
+<table id="booksTable" border="1">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Borrowed</th>
+        <th>Due Date</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Books will be inserted here by JavaScript -->
+    </tbody>
+</table>
+
+<script>
+    const bookServiceUrl = 'http://localhost:8081/books';
+    const borrowingServiceUrl = 'http://localhost:8082/borrow';
+
+    // Fetch and display all books
+    function fetchBooks() {
+        fetch(bookServiceUrl)
+            .then(response => response.json())
+            .then(data => {
+                const tbody = document.querySelector('#booksTable tbody');
+                tbody.innerHTML = ''; // Clear old rows
+                data.forEach(book => {
+                    const tr = document.createElement('tr');
+
+                    const idTd = document.createElement('td');
+                    idTd.textContent = book.bookId; // adapt if field is id instead of bookId
+                    tr.appendChild(idTd);
+
+                    const titleTd = document.createElement('td');
+                    titleTd.textContent = book.title;
+                    tr.appendChild(titleTd);
+
+                    const authorTd = document.createElement('td');
+                    authorTd.textContent = book.author;
+                    tr.appendChild(authorTd);
+
+                    const borrowedTd = document.createElement('td');
+                    borrowedTd.textContent = book.borrowed;
+                    tr.appendChild(borrowedTd);
+
+                    const dueDateTd = document.createElement('td');
+                    dueDateTd.textContent = book.dueDate ? book.dueDate : 'N/A';
+                    tr.appendChild(dueDateTd);
+
+                    const actionsTd = document.createElement('td');
+                    if (!book.borrowed) {
+                        // Show borrow button if book is not borrowed
+                        const borrowButton = document.createElement('button');
+                        borrowButton.textContent = 'Borrow';
+                        borrowButton.onclick = () => borrowBook(book.bookId);
+                        actionsTd.appendChild(borrowButton);
+                    } else {
+                        // Show return button if borrowed
+                        const returnButton = document.createElement('button');
+                        returnButton.textContent = 'Return';
+                        returnButton.onclick = () => returnBook(book.bookId);
+                        actionsTd.appendChild(returnButton);
+                    }
+
+                    tr.appendChild(actionsTd);
+                    tbody.appendChild(tr);
+                });
+            });
+    }
+
+    // Add a new book
+    const addBookForm = document.getElementById('addBookForm');
+    addBookForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const title = document.getElementById('bookTitle').value;
+        const author = document.getElementById('bookAuthor').value;
+
+        fetch(bookServiceUrl, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ title: title, author: author })
+        })
+        .then(response => response.json())
+        .then(() => {
+            document.getElementById('bookTitle').value = '';
+            document.getElementById('bookAuthor').value = '';
+            fetchBooks(); // Refresh book list
+        });
+    });
+
+    // Borrow a book
+    function borrowBook(bookId) {
+        fetch(`${borrowingServiceUrl}/${bookId}`, {
+            method: 'POST'
+        })
+        .then(response => {
+            if (response.ok) {
+                fetchBooks();
+            } else {
+                alert("Failed to borrow the book. Please check if the book exists.");
+            }
+        });
+    }
+
+    // Return a book
+    function returnBook(bookId) {
+        fetch(`${bookServiceUrl}/return/${bookId}`, {
+            method: 'PUT'
+        })
+        .then(response => {
+            if (response.ok) {
+                fetchBooks();
+            } else {
+                alert("Failed to return the book. Please check if the book exists or is borrowed.");
+            }
+        });
+    }
+
+    // Initial fetch
+    fetchBooks();
+</script>
+</body>
+</html>

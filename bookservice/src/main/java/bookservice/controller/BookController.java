@@ -57,6 +57,12 @@ public class BookController {
                    .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
+    @PutMapping("/return/{id}")
+    public ResponseEntity<Book> returnBook(@PathVariable Long id) {
+        return bookService.returnBook(id)
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
+    }
 
     /* handling GET requests so that a specific book is shown based
         on the title of the book

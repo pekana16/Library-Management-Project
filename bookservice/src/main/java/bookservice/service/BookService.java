@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import bookservice.repository.BookRepository;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 
@@ -71,6 +72,8 @@ public class BookService {
              */
             if (!book.isBorrowed()) {
                 book.setBorrowed(true);
+                // implemented the "borrowing due date mechanic" - the user will be borrowed for 14 days instead of "infinity"
+                book.setDueDate(LocalDate.now().plusDays(14));
                 bookRepository.save(book);
 
                 messageProducer.sendBookIsBorrowedMessage("Book with ID-number " + id + " has just now been borrowed.");
@@ -84,6 +87,25 @@ public class BookService {
             return Optional.empty();
         }
     }
+
+    public Optional<Book> returnBook(Long id) {
+        Optional<Book> foundBook = bookRepository.findById(id);
+        if (foundBook.isPresent()) {
+            Book book = foundBook.get();
+            if (book.isBorrowed()) {
+                book.setBorrowed(false);
+                book.setDueDate(null);
+                bookRepository.save(book);
+                return Optional.of(book);
+            } else {
+                // in case book has not been borrowed, there is ofc nothing to return
+                return Optional.empty();
+            }
+        } else {
+            return Optional.empty();
+        }
+    }
+
 
     // a certain book is found by id - which then gets deleted
     public void deleteBookById(Long id) {

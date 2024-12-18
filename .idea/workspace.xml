@@ -4,18 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a9f3efd-4a25-4de1-8695-45a32b9c4bfd" name="Changes" comment="RabbitMQ and Docker working">
-      <change beforePath="$PROJECT_DIR$/.idea/Library-Management-Project-main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+    <list default="true" id="4a9f3efd-4a25-4de1-8695-45a32b9c4bfd" name="Changes" comment="Synchronous and asynchronous communication works">
+      <change afterPath="$PROJECT_DIR$/bookservice/src/main/resources/static/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookservice/src/main/java/bookservice/producer/MessageProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookservice/src/main/java/bookservice/producer/MessageProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookservice/src/main/java/bookservice/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookservice/src/main/java/bookservice/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookservice/src/main/java/bookservice/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookservice/src/main/java/bookservice/model/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookservice/src/main/java/bookservice/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookservice/src/main/java/bookservice/service/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/borrowingservice/src/main/java/borrowingservice/controller/BorrowingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/borrowingservice/src/main/java/borrowingservice/controller/BorrowingController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +27,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "pekana16"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/pekana16/Library-Management-Project.git",
+    "accountId": "07035af1-0142-4f5b-99f5-676cc5b43ae3"
+  }
+}]]></component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -80,7 +87,14 @@
       <option name="presentableId" value="LOCAL−00002" />
       <updated>1730347676115</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL−00003" summary="Synchronous and asynchronous communication works">
+      <option name="closed" value="true" />
+      <created>1734487602064</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1734487602064</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -97,7 +111,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Spring initial" />
     <MESSAGE value="RabbitMQ and Docker working" />
-    <option name="LAST_COMMIT_MESSAGE" value="RabbitMQ and Docker working" />
+    <MESSAGE value="Synchronous and asynchronous communication works" />
+    <option name="LAST_COMMIT_MESSAGE" value="Synchronous and asynchronous communication works" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

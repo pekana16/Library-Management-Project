@@ -5,6 +5,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.time.LocalDate;
+
 @Entity
 @Getter
 @Setter
@@ -16,8 +18,11 @@ public class Book {
     private Long bookId;
     private String title;
     private String author;
-
     private boolean isBorrowed = false;
+    // used @Setter and @Getter here to make it more simple
+    @Getter
+    @Setter
+    private LocalDate dueDate;
 
     public boolean isBorrowed() {
         return isBorrowed;
