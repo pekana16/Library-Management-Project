@@ -1,2 +1,2 @@
 # Library-Management-Project
-Microservice project
+I have delivered the README seperately on Wiseflow

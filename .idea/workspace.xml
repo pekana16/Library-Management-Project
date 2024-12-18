@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a9f3efd-4a25-4de1-8695-45a32b9c4bfd" name="Changes" comment="Front end addition">
-      <change afterPath="$PROJECT_DIR$/gatewayservice/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gatewayservice/src/main/java/gateway/GatewayServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gatewayservice/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookservice/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/gatewayservice/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/borrowingservice/src/main/java/borrowingservice/controller/BorrowingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/borrowingservice/src/main/java/borrowingservice/controller/BorrowingController.java" afterDir="false" />
+    <list default="true" id="4a9f3efd-4a25-4de1-8695-45a32b9c4bfd" name="Changes" comment="small changes">
+      <change beforePath="$PROJECT_DIR$/gatewayservice/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/gatewayservice/src/main/resources/static/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +106,14 @@
       <option name="presentableId" value="LOCAL−00004" />
       <updated>1734497501106</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL−00005" summary="small changes">
+      <option name="closed" value="true" />
+      <created>1734507368754</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1734507368754</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -131,7 +132,8 @@
     <MESSAGE value="RabbitMQ and Docker working" />
     <MESSAGE value="Synchronous and asynchronous communication works" />
     <MESSAGE value="Front end addition" />
-    <option name="LAST_COMMIT_MESSAGE" value="Front end addition" />
+    <MESSAGE value="small changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="small changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

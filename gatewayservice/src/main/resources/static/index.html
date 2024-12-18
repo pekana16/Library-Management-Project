@@ -28,7 +28,7 @@
     </tr>
     </thead>
     <tbody>
-    <!-- Books will be inserted here by JavaScript -->
+    <!-- books will be showing up here -->
     </tbody>
 </table>
 
@@ -39,18 +39,18 @@
     const borrowingServiceUrl = `${gatewayUrl}/borrow`;
 
 
-    // Fetch and display all books
+    // displaying all the books
     function fetchBooks() {
         fetch(bookServiceUrl)
             .then(response => response.json())
             .then(data => {
                 const tbody = document.querySelector('#booksTable tbody');
-                tbody.innerHTML = ''; // Clear old rows
+                tbody.innerHTML = '';
                 data.forEach(book => {
                     const tr = document.createElement('tr');
 
                     const idTd = document.createElement('td');
-                    idTd.textContent = book.bookId; // adapt if field is id instead of bookId
+                    idTd.textContent = book.bookId;
                     tr.appendChild(idTd);
 
                     const titleTd = document.createElement('td');
@@ -71,13 +71,13 @@
 
                     const actionsTd = document.createElement('td');
                     if (!book.borrowed) {
-                        // Show borrow button if book is not borrowed
+                        // the "borrow" button should be shown if the book is not borrowed
                         const borrowButton = document.createElement('button');
                         borrowButton.textContent = 'Borrow';
                         borrowButton.onclick = () => borrowBook(book.bookId);
                         actionsTd.appendChild(borrowButton);
                     } else {
-                        // Show return button if borrowed
+                        // the "return" button shown if the book is borrowed
                         const returnButton = document.createElement('button');
                         returnButton.textContent = 'Return';
                         returnButton.onclick = () => returnBook(book.bookId);
@@ -90,7 +90,7 @@
             });
     }
 
-    // Add a new book
+    // adding a new book
     const addBookForm = document.getElementById('addBookForm');
     addBookForm.addEventListener('submit', (event) => {
         event.preventDefault();
@@ -106,11 +106,11 @@
         .then(() => {
             document.getElementById('bookTitle').value = '';
             document.getElementById('bookAuthor').value = '';
-            fetchBooks(); // Refresh book list
+            fetchBooks(); // the book list gets refreshed/updated
         });
     });
 
-    // Borrow a book
+    // borrowing the book
     function borrowBook(bookId) {
         fetch(`${borrowingServiceUrl}/${bookId}`, {
             method: 'POST'
@@ -124,7 +124,7 @@
         });
     }
 
-    // Return a book
+    // returning a book
     function returnBook(bookId) {
         fetch(`${bookServiceUrl}/return/${bookId}`, {
             method: 'PUT'
@@ -138,7 +138,6 @@
         });
     }
 
-    // Initial fetch
     fetchBooks();
 </script>
 </body>
