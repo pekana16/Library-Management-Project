@@ -32,9 +32,12 @@
     </tbody>
 </table>
 
+
 <script>
-    const bookServiceUrl = 'http://localhost:8081/books';
-    const borrowingServiceUrl = 'http://localhost:8082/borrow';
+    const gatewayUrl = 'http://localhost:8080';
+    const bookServiceUrl = `${gatewayUrl}/books`;
+    const borrowingServiceUrl = `${gatewayUrl}/borrow`;
+
 
     // Fetch and display all books
     function fetchBooks() {

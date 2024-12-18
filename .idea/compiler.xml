@@ -11,6 +11,7 @@
         <module name="libraryX (1) (com.library-management-project)" />
         <module name="libraryX (2) (com.lbrary-management-project)" />
         <module name="bookservice" />
+        <module name="gatewayservice" />
       </profile>
     </annotationProcessing>
   </component>
@@ -18,6 +19,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="bookservice" options="-parameters -parameters" />
       <module name="borrowingservice" options="-parameters -parameters" />
+      <module name="gatewayservice" options="-parameters" />
       <module name="libraryX (1) (com.library-management-project)" options="-parameters -parameters" />
       <module name="libraryX (2) (com.lbrary-management-project)" options="-parameters -parameters" />
     </option>

@@ -9,10 +9,6 @@ import borrowingservice.service.BorrowingService;
 
 @RestController
 @RequestMapping("/borrow")
-/* the borrowing function wasnt working on front-end - it was solved with the use of @CrossOrigin
-     -> it simply allows requests from "http://localhost:8081"
-*/
-@CrossOrigin(origins = "http://localhost:8081")
 public class BorrowingController {
     private final BorrowingService borrowingService;
 
